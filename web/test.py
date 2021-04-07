@@ -1,6 +1,5 @@
-import os
-import requests
 import unittest
+import requests
 from sqlalchemy import create_engine
 
 class DockerTestCase(unittest.TestCase):
