@@ -23,7 +23,7 @@ class TestServer(unittest.TestCase):
         self.assertEqual(response.status_code, 200)
 
     def test_err(self):
-        response = requests.post('http://localhost:5000/add', data={'expressions':'1+'})
+        response = requests.post('http://localhost:5000/add', data={'expressions':'1+a'})
         self.assertEqual(response.status_code, 400)
 
 
